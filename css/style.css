@@ -32,26 +32,19 @@
 
 
 /*header*/
-header{
+header nav{
     background-color: black;
-    padding: 5px;
-    position: sticky;
-    top: 0;
 }
-
-header nav ul li{
-    font-family: 'convexion';
-    font-weight: light italic;
+.navbar-brand img{
+    width: 55px;
 }
-
-header nav ul li a{
+.navbar-nav li a{
+    color: white;
+    list-style: none;
     text-decoration: none;
-    color: aliceblue;
-}
-header nav ul li{
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 20px;
+    font-family: 'bold italic';
+    margin: 10px;
+    padding: 10px;
 }
 
 
@@ -112,8 +105,8 @@ header nav ul li{
 .valores h2{
     font-family: 'convexion';
     font-size: 'calisto mt';
-    color: #EFE3D9;
-    background-color: black;
+    color: black;
+    background-color: #EFE3D9;
     background-position: 15px;
 }
 .valores img{
@@ -175,6 +168,7 @@ header nav ul li{
 
 .destacado{
     background-color: black;
+    height: 420px;
 }
 
 .destacado img{
@@ -196,6 +190,10 @@ header nav ul li{
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+.productos{
+    height: 100%px;
 }
 
 .productos h2{
@@ -223,6 +221,9 @@ header nav ul li{
 }
 .productos h3{
     margin: 10px;
+    font-size: 20px;
+    font-family: 'convexion';
+    font-style: 'italic';
 }
 
 .productos .productos-contenedor{
@@ -272,6 +273,10 @@ footer div a{
     color: #EFE3D9;
     font-family: 'italic';
 }
+footer iframe{
+    height: 220px;
+}
+
 .datos div{
     width: 400px;
     height: 400px;
@@ -289,6 +294,10 @@ footer div a{
 }
 .datos div p{
     color: #EFE3D9;
+}
+.datos div a{
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width:600px){

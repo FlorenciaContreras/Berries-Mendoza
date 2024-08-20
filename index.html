@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Berries Mendoza</title>
 </head>
 <body>
     <!--CABEZA-->
     <header>
         <!--barra de navegacion-->
-        <nav>
-            <!--LISTA-->
-            <ul>
-                <li><a href="./index.html">inicio</a></li>
-                <li><a href="./pages/nosotros.html">nosotros</a></li>
-                <li><a href="./pages/nuestrosproductos.html">nuestrosproductos</a></li>
-                <li><a href="./pages/comocomprar.html">comocomprar</a></li>
-                <li><a href="./pages/contacto.html">contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./image/logo_blanco@4x.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="i" aria-current="page" href="./index.html">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="n" href="./pages/nosotros.html">nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="p" href="./pages/nuestrosproductos.html">nuestros productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="compra" href="./pages/comocomprar.html">como comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="con" href="./pages/contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!--contiene todo el contenido de la pag principal-->
@@ -35,6 +54,21 @@
         <section class="nosotros">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam accusamus neque aperiam voluptate saepe provident, voluptates libero cumque error ratione consequatur perferendis est fugiat placeat cupiditate soluta omnis repellendus.</p>
         </section>
+
+        <section class="destacado">
+            <div class="favorito">
+                <h2>tu favorito</h2>
+                <img src="./image/foto-prodcuto-mix-clasico.jpg" alt="mezcla de arandano frutilla mora y frambuesa">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, quod!</p>
+                <a href="">lo quiero</a>
+            </div>
+            <div class="nuestros-clientes">
+                <h2>opiniones de nuestros clientes</h2>
+                <img src="./image/opinion-cliente.jpg" alt="imagen conversacion de whatsapp con opinion de cliente">
+            </div>
+            <!--imagen-->
+        </section>
+
         <section class="grids-conteiner">
             <div class="grids-jugos">
                 <img src="./image/jugos.jpg" alt="jugo">
@@ -57,141 +91,8 @@
                 <h3>dulces</h3>
             </div>
         </section>
-
-        <section class="valores">
-            <h2>filosofia y valores de la marca</h2>
-            <div class="valores-contenedor">
-                <div>
-                    <img src="./image/imagen-simpleza.png" alt="imagen simpleza">
-                    <p>simpleza</p>
-                </div>
-                <div>
-                    <img src="./image/imagen-precio-calidad.png" alt="imagen calidad">
-                    <p>precio calidad</p>
-                </div>
-                <div>
-                    <img src="./image/imagen-confianza.png" alt=" imagen confianza">
-                    <p>confianza</p>
-                </div>
-                <div>
-                    <img src="./image/imagen-profesionalismo.png" alt="imagen profesionalismo">
-                    <p>profesionalismo</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="destacado">
-            <div class="favorito">
-                <h2>tu favorito</h2>
-                <img src="./image/foto-prodcuto-mix-clasico.jpg" alt="mezcla de arandano frutilla mora y frambuesa">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, quod!</p>
-                <a href="">lo quiero</a>
-            </div>
-            <div class="nuestros-clientes">
-                <h2>opiniones de nuestros clientes</h2>
-                <img src="./image/opinion-cliente.jpg" alt="imagen conversacion de whatsapp con opinion de cliente">
-            </div>
-            <!--imagen-->
-        </section>
-
-        <section class="productos">
-            <h2>nuestros prductos</h2>
-            <div class="productos-contenedor">
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-prodcuto-mix-clasico.jpg" alt="mezcla de frutilla arandano mora y frambuesa">
-                    <h3>mix clasico</h3>
-                    <a href="">comprar</a>
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-mix-uco.jpg" alt="mezcla de arandano mora y frambuesa">
-                    <h3>mix uco</h3>
-                    <a href="">comprar</a>
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-arandano.jpg" alt="arandanos">
-                    <h3>arandanos</h3>
-                    <a href="">comprar</a>
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-frutilla.jpg" alt="frutilla">
-                    <h3>frutillas</h3>
-                    <a href="">comprar</a>
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-frambuesa.jpg" alt="frambuesa">
-                    <h3>frambuesa</h3>
-                    <a href="">comprar</a>
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-mora.jpg" alt="mora">
-                    <h3>mora</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-mango.jpg" alt="mango">
-                    <h3>mango</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-maracuya.jpg" alt="maracuya">
-                    <h3>maracuya</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-mix-mango-frutilla.jpg" alt="frutilla">
-                    <h3>mix frutilla mango</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-mix-anana-arandano.jpeg" alt="mezcla de anana y arandano">
-                    <h3>mix anana arandano</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-anana-durazno.jpg" alt="mezcla de anana y durazno">
-                    <h3>mix anana durazno</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-mix-tricolor.jpg" alt="mezcla de pimientos verdes rojos y amarillos con cebolla">
-                    <h3>mix tricolor</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-mix-primavera.jpg" alt="mezcla de arvejas zanahoria choclo">
-                    <h3>mix primavera</h3>
-                    <a href="">comprar</a>
-                    <!---boton-->
-                </div>
-                <div>
-                    <!--imagen-->
-                    <img src="./image/foto-producto-pulpa-de-palta.png" alt="pulpa de palta congelada">
-                    <h3>pulpa de palta</h3>
-                    <a href="">comprar</a>
-                    <!--boton-->
-                </div>
-            </div>
     </main>
+    
     <footer>
         <section class="datos">
             <div>
@@ -217,5 +118,6 @@
             <a href=""><img src="./image/whatsapp-movil.png" alt=""></a>
         </div>
     </footer>
+
 </body>
 </html>
